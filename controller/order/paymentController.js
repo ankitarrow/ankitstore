@@ -42,8 +42,8 @@ const paymentController = async(request,response)=>{
 
                 }
             }),
-            success_url : `${process.env.FRONTEND_URL}/success`,
-            cancel_url : `${process.env.FRONTEND_URL}/cancel`,
+            success_url : `https://ankitstore.onrender.com/success`,
+            cancel_url : `https://ankitstore.onrender.com/cancel`,
         }
 
         const session = await stripe.checkout.sessions.create(params)
