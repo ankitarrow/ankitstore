@@ -8,7 +8,7 @@ const bodyParser = require('body-parser')
 const path = require("path");
 const app = express()
 app.use(cors({
-  origin: "https://ankitstore.vercel.app",
+  origin: true,
   credentials: true,
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   headers: ["Content-Type", "Authorization"]
