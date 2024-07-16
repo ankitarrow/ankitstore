@@ -42,8 +42,8 @@ const paymentController = async(request,response)=>{
 
                 }
             }),
-            success_url : `https://ankitstore.onrender.com/success`,
-            cancel_url : `https://ankitstore.onrender.com/cancel`,
+            success_url : `https://ankitstore.vercel.app/success`,
+            cancel_url : `https://ankitstore.vercel.app/cancel`,
         }
 
         const session = await stripe.checkout.sessions.create(params)
